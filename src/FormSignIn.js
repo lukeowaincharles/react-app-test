@@ -23,6 +23,7 @@ const FormSignIn = () => {
                     <div className="text-center mb-3">
                       <SigninButton />
                     </div>
+                    <p>Already have an <a href="#!">Account</a>?</p>
                   </div>
                 </div>
               </div>

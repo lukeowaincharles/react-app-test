@@ -21,19 +21,6 @@ code {
 .form__sign-in .font-small {
   font-size: 0.8rem; }
 
-.form__sign-in button {
-  border-radius: 40px;
-  padding: 7px 30px;
-  background: linear-gradient(40deg,#FF003C,#80001E);
-  color: white;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(128, 0, 30, 0.20), 0 4px 12px 0 rgba(128, 38, 59, 0.20);
-  box-shadow: 0 2px 5px 0 rgba(128, 0, 30, 0.20), 0 4px 12px 0 rgba(128, 38, 59, 0.20); }
-
-.form__sign-in button:hover {
-  color: white;
-  -webkit-box-shadow: 0 5px 11px 0 rgba(128, 0, 30, 0.30), 0 4px 15px 0 rgba(128, 38, 59, 0.30);
-  box-shadow: 0 5px 11px 0 rgba(128, 0, 30, 0.30), 0 4px 15px 0 rgba(128, 38, 59, 0.30); }
-
 .card .card__body input {
   display: block;
   text-align: center;

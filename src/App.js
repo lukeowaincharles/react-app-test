@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import FormSignIn from './FormSignIn';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
