@@ -1,0 +1,21 @@
+
+// Breakpoints Declarations
+// 
+// To add/extend new/custom breakpoints
+$grid-breakpoints: () !default;
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,
+  (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+  )
+);
+// End Breakpoints Declarations
+
+// Font family
+$font-raleway: 'Raleway', sans-serif;
+$font-playfair: 'Playfair Display', serif;

@@ -1,7 +1,7 @@
 import React from 'react';
-import SigninButton from './SigninButton';
+import LoginButton from './LoginButton';
 
-const FormSignIn = () => {
+const FormSignUp = () => {
     return (
       <section className="form__sign-in">
         <div className="container">
@@ -10,7 +10,11 @@ const FormSignIn = () => {
               <div className="card">
                 <div className="card__body p-5">
                   <div className="text-center">
-                    <h3>Sign in</h3>
+                    <h3>Sign up</h3>
+                    <div className="name">
+                      <input label="Name" id="name" />
+                      <label for="name">Your name</label>
+                    </div>
                     <div className="email">
                       <input label="Your email" id="email" />
                       <label for="email">Your email</label>
@@ -19,11 +23,10 @@ const FormSignIn = () => {
                       <input label="Your password" id="password" />
                       <label for="password">Your password</label>
                     </div>
-                    <p className="forgotPassword py-3">Forgot <a href="#!" className="">password?</a></p>
                     <div className="text-center mb-3">
-                      <SigninButton />
+                      <LoginButton />
                     </div>
-                    <p>Not a member? <a href="#!">Sign up</a></p>
+                    <p>Already have an <a href="#!">Account</a>?</p>
                   </div>
                 </div>
               </div>
@@ -34,4 +37,4 @@ const FormSignIn = () => {
     )
   }
 
-  export default FormSignIn;
+  export default FormSignUp;
