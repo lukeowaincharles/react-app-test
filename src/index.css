@@ -27,12 +27,12 @@ code {
   margin: 0 auto;
 }
 
-.password, .email {
+.password, .email, .name {
   position: relative;
   padding: 5px 0;
 }
 
-.password label, .email label {
+.password label, .email label, .name label {
   position: absolute;
   top: 7px;
   left: 50%;
