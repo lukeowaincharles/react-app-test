@@ -65,7 +65,7 @@ class FormSignIn extends React.Component {
                         type="text"
                         id="email"
                         className="form-control"
-                        placeholder="username"
+                        placeholder="Name"
                         autoComplete="false"
                       />
                       </div>
@@ -75,11 +75,11 @@ class FormSignIn extends React.Component {
                           id="password"
                           className="
                           form-control"
-                          placeholder="Your password"
+                          placeholder="Password"
                         />
                       </div>
                       <p className="forgotPassword py-3">Forgot <a href="#!" className="">password?</a></p>
-                      <div className="text-center mb-3">
+                      <div className="text-center mt-3 mb-3">
                         <button className="button btn" onClick={this.Control}>
                           Sign in
                         </button>
