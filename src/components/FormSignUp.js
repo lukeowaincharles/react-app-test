@@ -53,10 +53,10 @@ class FormSignUp extends Component {
                         <input type="text" id="signUpEmail" className="form-control" placeholder="Email" autoComplete="false"></input>
                       </div>
                       <div className="password">
-                        <input type="password" id="signUpPassword1" className="form-control" placeholder="password" ></input>
+                        <input type="password" id="signUpPassword1" className="form-control" placeholder="Password"></input>
                       </div>
                       <div className="password">
-                        <input type="password" id="signUpPassword2" className="form-control" placeholder="re-enter password" ></input>
+                        <input type="password" id="signUpPassword2" className="form-control" placeholder="Confirm password"></input>
                       </div>
                       <div className="text-center mb-3">
                       <button className="btn button" onClick={this.NewUser}>SIGN UP</button>
