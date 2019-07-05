@@ -47,7 +47,7 @@ class FormSignIn extends React.Component {
   render() {
     return (
       <div>
-        {this.state.welcomeConnect ? (
+        { this.state.welcomeConnect ? (
           <Welcome uName={this.state.trueUsername} />
         ) : this.state.isSign ? (
           <Signup dataState={this.state} isClick={this.state.welcomeConnect} />
@@ -78,7 +78,14 @@ class FormSignIn extends React.Component {
                           placeholder="Password"
                         />
                       </div>
-                      <p className="forgotPassword py-3">Forgot <a href="#!" className="">password?</a></p>
+                      <p className="forgotPassword py-3"
+                      // add onclick function here
+                      // onClick={this.}
+                      style={{
+                        cursor: "pointer"
+                      }}
+                      >
+                      Forgot password?</p>
                       <div className="text-center mt-3 mb-3">
                         <button className="button btn" onClick={this.Control}>
                           Sign in
@@ -87,9 +94,6 @@ class FormSignIn extends React.Component {
                       <p
                       onClick={this.SignUp}
                       style={{
-                        textAlign: "center",
-                        color: "#262626",
-                        marginTop: "-5px",
                         cursor: "pointer"
                       }}
                       >
