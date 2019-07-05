@@ -53,7 +53,7 @@ class FormSignUp extends Component {
                       <div className="text-center">
                         <h3>Sign up</h3>
                         <div className="name">
-                          <input type="text" id="signUpUsername" className="form-control" placeholder="Name" autoComplete="false"></input>
+                          <input type="text" id="signUpUsername" className="form-control" placeholder="Username" autoComplete="false"></input>
                         </div>
                         <div className="email">
                           <input type="text" id="signUpEmail" className="form-control" placeholder="Email" autoComplete="false"></input>

@@ -73,7 +73,7 @@ class FormSignIn extends React.Component {
                         type="text"
                         id="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder="Username"
                         autoComplete="false"
                       />
                       </div>
