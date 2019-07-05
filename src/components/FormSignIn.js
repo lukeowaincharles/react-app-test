@@ -1,6 +1,7 @@
 import React from 'react';
 import Welcome from "./Welcome";
 import Signup from "./FormSignUp";
+import ForgotPassword from "./ForgotPassword";
 
 class FormSignIn extends React.Component {
   constructor(props) {
@@ -12,7 +13,8 @@ class FormSignIn extends React.Component {
       welcomeConnect: false,
       trueUsername: "",
       isSign: false,
-      isSignUp: false
+      isSignUp: false,
+      isPass: false
     };
     this.new = this.props;
   }
@@ -44,6 +46,10 @@ class FormSignIn extends React.Component {
     this.setState({ isSign: true });
   };
 
+  ForgotPassword = () => {
+    this.setState({ isPass: true });
+  };
+
   render() {
     return (
       <div>
@@ -51,6 +57,8 @@ class FormSignIn extends React.Component {
           <Welcome uName={this.state.trueUsername} />
         ) : this.state.isSign ? (
           <Signup dataState={this.state} isClick={this.state.welcomeConnect} />
+        ) : this.state.isPass ? (
+          <ForgotPassword dataState={this.state} isClick={this.state.welcomeConnect} />
         ) : (
           <section className="form__sign-in">
           <div className="container">
@@ -79,8 +87,7 @@ class FormSignIn extends React.Component {
                         />
                       </div>
                       <p className="forgotPassword py-3"
-                      // add onclick function here
-                      // onClick={this.}
+                      onClick={this.ForgotPassword}
                       style={{
                         cursor: "pointer"
                       }}
