@@ -61,57 +61,57 @@ class FormSignIn extends React.Component {
           <ForgotPassword dataState={this.state} isClick={this.state.welcomeConnect} />
         ) : (
           <section className="form__sign-in">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 offset-md-3">
-                <div className="card">
-                  <div className="card__body p-5">
-                    <div className="text-center">
-                      <h3>Sign in</h3>
-                      <div className="email">
-                      <input
-                        type="text"
-                        id="email"
-                        className="form-control"
-                        placeholder="Username"
-                        autoComplete="false"
-                      />
-                      </div>
-                      <div className="password">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6 offset-md-3">
+                  <div className="card">
+                    <div className="card__body p-5">
+                      <div className="text-center">
+                        <h3>Sign in</h3>
+                        <div className="email">
                         <input
-                          type="password"
-                          id="password"
-                          className="
-                          form-control"
-                          placeholder="Password"
+                          type="text"
+                          id="email"
+                          className="form-control"
+                          placeholder="Username"
+                          autoComplete="false"
                         />
+                        </div>
+                        <div className="password">
+                          <input
+                            type="password"
+                            id="password"
+                            className="
+                            form-control"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <p className="forgotPassword py-3"
+                        onClick={this.ForgotPassword}
+                        style={{
+                          cursor: "pointer"
+                        }}
+                        >
+                        Forgot password?</p>
+                        <div className="text-center mt-3 mb-3">
+                          <button className="button btn" onClick={this.Control}>
+                            Sign in
+                          </button>
+                        </div>
+                        <p
+                        onClick={this.SignUp}
+                        style={{
+                          cursor: "pointer"
+                        }}
+                        >
+                        Not a member? Sign up</p>
                       </div>
-                      <p className="forgotPassword py-3"
-                      onClick={this.ForgotPassword}
-                      style={{
-                        cursor: "pointer"
-                      }}
-                      >
-                      Forgot password?</p>
-                      <div className="text-center mt-3 mb-3">
-                        <button className="button btn" onClick={this.Control}>
-                          Sign in
-                        </button>
-                      </div>
-                      <p
-                      onClick={this.SignUp}
-                      style={{
-                        cursor: "pointer"
-                      }}
-                      >
-                      Not a member? Sign up</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
         )}
       </div>
     );
