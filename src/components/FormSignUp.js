@@ -58,7 +58,7 @@ class FormSignUp extends Component {
                       <div className="password">
                         <input type="password" id="signUpPassword2" className="form-control" placeholder="Confirm password"></input>
                       </div>
-                      <div className="text-center mb-3">
+                      <div className="text-center mt-3 mb-3">
                       <button className="btn button" onClick={this.NewUser}>SIGN UP</button>
                       </div>
                       <p
