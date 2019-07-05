@@ -27,7 +27,7 @@ class FormSignIn extends React.Component {
       });
     }
 
-    var username = document.getElementById("username");
+    var username = document.getElementById("email");
     var password = document.getElementById("password");
     this.state.users.map(user => {
       if (
@@ -73,7 +73,7 @@ class FormSignIn extends React.Component {
                         type="text"
                         id="email"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Email"
                         autoComplete="false"
                       />
                       </div>
